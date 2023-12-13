@@ -11,6 +11,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 
+        :root {
+            --bg: #23272A;
+            --txt: #EEEEEE;
+            --f1: 'Permanent Marker', cursive;
+            --logo: 'Whisper', cursive;
+        }
 
         html {
             transition: all 3s ease-out;
@@ -21,18 +27,13 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --bg: #23272A;
-            --txt: #EEEEEE;
-            --f1: 'Permanent Marker', cursive;
-            --logo: 'Whisper', cursive;
-        }
 
         body,
         html {
             margin: 0;
             padding: 0;
             background-color: var(--bg);
+            transition: all 3s ease-out;
         }
 
         #mainheading {
@@ -258,13 +259,15 @@
         for (var i = 0; i < allLinks.length; i++) {
             allLinks[i].addEventListener('click', function (event) {
                 event.preventDefault()
+                document.documentElement.style.overflow = "hidden"
+                document.body.style.overflow = "hidden"
                 if (window.matchMedia("(max-width: 767px)").matches) {
-                    document.documentElement.style.transform = 'translate(-500%) rotate(360deg)';
+                    document.body.style.transform = 'translate(-500%) rotate(360deg)';
                     setTimeout(() => {
                         window.location.href = this.href;
                     }, 1200);
                 } else {
-                    document.documentElement.style.transform = 'translate(-200%) rotate(180deg)';
+                    document.body.style.transform = 'translate(-200%) rotate(180deg)';
                     setTimeout(() => {
                         window.location.href = this.href;
                     }, 800);
