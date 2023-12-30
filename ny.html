@@ -20,11 +20,9 @@
             position: relative;
         }
 
-        * {
-            scale: 1.1
-        }
 
         .countdown {
+            display: none;
             text-align: center;
             position: absolute;
             top: 50%;
@@ -53,6 +51,8 @@
         /* Style for the fullscreen button */
         #fullscreenButton {
             display: absolute;
+            margin-top: 20%;
+            margin-left: 50%
         }
 
         .snowflake2 {
@@ -248,9 +248,9 @@
             <div class="inner">2024</div>
         </div>
     </div>
-    <div class="countdown">
-        
     <button id="fullscreenButton">FS</button>
+
+    <div class="countdown" id="countdownContainer">
         <h1 id="countdownDisplay">Viti i ri!</h1>
         <div class="countdown-digits">
             <span class="countdown-digit" id="days">00</span>d
@@ -298,13 +298,9 @@
 
         // Toggle fullscreen mode
         document.getElementById('fullscreenButton').addEventListener('click', () => {
-            if (document.fullscreenElement) {
-                document.exitFullscreen();
-                document.getElementById('fullscreenButton').style.display = 'block'; // Show button when exiting fullscreen
-            } else {
-                document.documentElement.requestFullscreen();
-                document.getElementById('fullscreenButton').style.display = 'none'; // Hide button when in fullscreen
-            }
+            document.getElementById('countdownContainer').style.display = 'block';
+            document.documentElement.requestFullscreen();
+            document.getElementById('fullscreenButton').style.display = 'none'; // Hide button when in fullscreen
         });
 
         // Create snowfall effect
