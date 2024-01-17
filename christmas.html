@@ -7,10 +7,10 @@
     <title>Korabi's Website</title>
     <link rel="icon" type="image/x-icon" href="/favicon.png">
     <meta property="og:title" content="Korabi's Website">
-    <meta property="og:description" content="👋 Hey There, I'm Korab, Check out my website!">
+    <meta property="og:description" content="🎄🎅 Hey There, I'm Korab, Check out my website!">
     <meta property="og:url" content="https://korabi.xyz/">
     <meta property="og:type" content="website">
-    <meta name="theme-color" content="#5865F2">
+    <meta name="theme-color" content="#C62828">
     <meta property="og:image" content="https://i.imgur.com/w3hKXFW.png">
     <script src="https://kit.fontawesome.com/43d1396afb.js" crossorigin="anonymous"></script>
     <style>
@@ -18,8 +18,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 
         :root {
-            --bg: #23272A;
-            --txt: #EEEEEE;
+            --bg: #165B33; /* Green */
+            --txt: #FFFFFF;
             --f1: 'Permanent Marker', cursive;
             --logo: 'Whisper', cursive;
         }
@@ -33,7 +33,6 @@
             box-sizing: border-box;
         }
 
-
         body,
         html {
             margin: 0;
@@ -45,7 +44,7 @@
         #mainheading {
             font-family: var(--f1);
             color: var(--txt);
-            font-size: 2.5rem;
+            font-size: 3rem;
             padding: 10px;
             border-radius: 10px;
             text-align: center;
@@ -66,12 +65,13 @@
 
         .logo {
             font-family: var(--logo);
-            color: var(--txt);
+            color: #BB2528;
             font-size: 2em;
             text-decoration: none;
             font-weight: bold;
             margin-left: 20px;
             cursor: default;
+            filter: drop-shadow(0 0 0.8px white) drop-shadow(0 0 0.8px white) drop-shadow(0 0 0.8px white) drop-shadow(0 0 0.8px white);
         }
 
         .logo.anim {
@@ -154,22 +154,22 @@
         }
 
         .big-text {
-            font-size: 7em;
+            font-size: 9em;
             margin-bottom: 10px;
-            transform: translateX(-10px);
+            transform: translateX(-20px) translateY(30px);
             padding-right: 20px;
             padding-left: 20px;
             filter: drop-shadow(0 0 0.9px white) drop-shadow(0 0 0.9px white) drop-shadow(0 0 0.9px white) drop-shadow(0 0 0.9px white);
             background: linear-gradient(to right,
-                    #7953cd 20%,
-                    #00affa 30%,
-                    #0190cd 70%,
-                    #764ada 80%);
+                  #BB2528 20%,
+                    #146B3A 30%,
+                    #159e51 70%,
+                    #BB2528  80%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             background-size: 500% auto;
-            animation: textShine 3s ease-in-out infinite alternate;
+            animation: textShine 2.5s ease-in-out infinite alternate;
         }
 
         @keyframes textShine {
@@ -184,7 +184,7 @@
 
         p {
             text-align: center;
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin: 10px 0;
             font-family: 'Roboto', sans-serif;
         }
@@ -194,7 +194,8 @@
         }
 
         nav {
-            background-color: rgba(0, 0, 0, 0.15);
+            background-color: var(--bg);
+            border-bottom: 1px solid white;
         }
 
         .button.github {
@@ -217,11 +218,69 @@
             p {
                 max-width: 30ch;
             }
+            #mainheading {
+                font-size: 2.5rem;
+            }
         }
+        .snowflake {
+  color: #fff;
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+.snowflake2 {
+  color: #fff;
+  font-size: 0.5em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+.snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+
     </style>
 </head>
 
 <body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake snowflake2">
+            <div class="inner">wow this is cool</div>
+          </div>
+      </div>
     <nav id="nav">
         <a href="https://i.imgur.com/4KeIM0I.jpg    " class="logo anim">KA</a>
         <ul>
